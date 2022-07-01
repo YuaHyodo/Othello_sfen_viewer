@@ -28,7 +28,7 @@ class simple_window():
         for i in range(8):
             rank = []
             for j in range(8):
-                rank.append(Label(self.board_frame, text=D[i] + str(j + 1),
+                rank.append(Label(self.board_frame, text=D[j] + str(i + 1),
                                  fg = 'red', bd=2, bg=self.color_dict[self.sfen[(i * 8) + j]],
                                  relief='ridge', width=6, height=2))
             self.sq.append(rank)
